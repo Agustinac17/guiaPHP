@@ -76,11 +76,72 @@
     <br>  
 
     <p>EJERCICIO 13
-    <!--<form method="post" action="captdatos.php">
-    </form>-->
+    <form method="post" action="captdatos.php">
+    Completar contrato:<br>
+    <textarea name="contrato" rows="8" cols="80">
+    En la ciudad de [........], se acuerda entre la Empresa [..........] 
+    representada por el Sr. [..............] en su carácter de Apoderado,
+    con domicilio en la calle [..............] y el Sr. [..............],
+    futuro empleado con domicilio en [..............], celebrar el presente 
+    contrato a Plazo Fijo, de acuerdo a la normativa vigente de los
+    artículos 90,92,93,94, 95 y concordantes de la Ley de Contrato de Trabajo N° 20.744.
+    </textarea>    
+    <input type="submit" name="CONFIRMAR">    
+    </form>
     <p>-----------------------------------------
     <br>   
     <br>  
+
+    <p>EJERCICIO 15
+    <form method="post" action="captdatos.php">
+    PIZZA 40
+    <br>
+    <br>
+        Nombre:
+        <input type="text" name="nombre" size="30">
+        <br>
+        <br>
+        Dirección:
+        <input type="text" name="direccion" size="40">
+        <br>
+        <br>
+        Jamon y Queso:
+        <input type="checkbox" name="jamonqueso">
+        <input type="text" name="cantjamonqueso" size="3">
+        <br>
+        <br>
+        Napolitana:
+        <input type="checkbox" name="napolitana">
+        <input type="text" name="cantnapolitana" size="3">
+        <br>
+        <br>
+        Muzzarella:
+        <input type="checkbox" name="muzzarella">
+        <input type="text" name="cantmuzzarella" size="3">
+        <br>
+        <br>
+        <input type="submit" value="Confirmar">    
+    </form>
+    <p>-----------------------------------------
+    <br>   
+    <br>  
+
+    <p>EJERCICIO 18
+    <form method="post" action="captdatos.php">
+    Ingrese nombre de usuario:
+    <input type="text" name="usuario">
+    <br>
+    Ingrese su clave:
+    <input type="password" name="clave1">
+    <br>
+    Repita la clave
+    <input type="password" name="clave2">
+    <br>
+    <input type="submit" name="Confirmar">
+    </form>
+    <p>-----------------------------------------
+    <br>   
+    <br> 
 
     <?php 
     //EJEMPLO
@@ -261,7 +322,7 @@
     $diaSemana[] = "Domingo";
     echo "Primer dia de la semana: " . $diaSemana[0];
     echo "<br>";
-    echo "Domingo d resurrección: " . $diaSemana[6];
+    echo "Domingo de resurrección: " . $diaSemana[6];
     
     echo "<br>";
     echo "<br>";
@@ -271,7 +332,7 @@
     
     //EJERCICIO 15//
     echo "EJERCICIO 15","<br>";
-    
+    echo "ESTA AL COMIENZO DEL HTML";
     echo "<br>";
     echo "<br>";
     echo "---------------------------------";
@@ -280,7 +341,7 @@
     
     //EJERCICIO 16//
     echo "EJERCICIO 16","<br>";
-    
+    echo "ESTA en archivo CAPDATOS";
     echo "<br>";
     echo "<br>";
     echo "---------------------------------";
@@ -289,8 +350,24 @@
     
     //EJERCICIO 17//
     echo "EJERCICIO 17","<br>";
-
-
+    $clave['agus'] = "aguscapa";
+    $clave['kiara'] = "kiaris2004";
+    $clave['fabri'] = "fabrihugo";
+    $clave['alejon'] = "gugantic03";
+    $clave['bimbo'] = "bimbichu";
+    echo "<<<<<<<<<<<<<<<<<<<<<<<<<";
+    echo "<br>";
+    echo "La clave de agus es: " . $clave['agus'];
+    echo "<br>";
+    echo "La clave de kiara es: " . $clave['kiara'];
+    echo "<br>";
+    echo "La clave de fabri es: " . $clave['fabri'];
+    echo "<br>";
+    echo "La clave de alejon es: " . $clave['alejon'];
+    echo "<br>";
+    echo "La clave de bimbo es: " . $clave['bimbo'];
+    echo "<br>";
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>>";
     echo "<br>";
     echo "<br>";
     echo "---------------------------------";
@@ -299,9 +376,8 @@
 
 
     //EJERCICIO 18//
-    echo "EJERCICIO 18";
-    
-
+    echo "EJERCICIO 18","<br>";
+    echo "ESTA AL COMIENZO DEL HTML";
 
     ?>
 </body>
